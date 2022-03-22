@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+</head>
+
+<body>
+    <h1>Chat App</h1>
+
+    <form method="POST" id="post-form" action="checkview">
+        {% csrf_token %}
+        <p>
+            <input type="text" name="room_name" id="room_name" placeholder="Room Name">
+        </p>
+        <p>
+            <input type="text" name="username" id="username" placeholder="username">
+        </p>
+        <p>
+            <input type="submit" value="Enter Room">
+        </p>
+    </form>
+</body>
+
+</html>
